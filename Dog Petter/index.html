@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Petter</title>
+</head>
+
+<script>
+    function pet() {
+        var dog = document.getElementById("dog");
+        dog.style.transform = "translateY(-20px)";
+        setTimeout(function () {
+            dog.style.transform = "translateY(0)";
+        }, 100);
+    }
+</script>
+
+<body>
+    <img src="dog.png" alt="Virtual dog" id="dog" height="300px" width="300px">
+    <button onclick="pet()">Pet the dog</button>
+</body>
+
+</html>
