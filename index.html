@@ -18,6 +18,51 @@
     }
 </script>
 
+<style>
+    body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 50px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+    p {
+        text-align: center;
+        font-size: 20px;
+        color: #555;
+        margin-top: 20px;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        background-color: #333;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+</style>
+
 <body>
     <img src="dog.png" alt="Virtual dog" id="dog" height="300px" width="300px">
     <button onclick="pet()">Pet the dog</button>
