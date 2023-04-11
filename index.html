@@ -7,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Petter</title>
 </head>
-
 <script>
+    var count = 0;
+
     function pet() {
         var dog = document.getElementById("dog");
         dog.style.transform = "translateY(-20px)";
         setTimeout(function () {
             dog.style.transform = "translateY(0)";
         }, 100);
+
+        count++;
+        document.getElementById("count").textContent = count;
     }
 </script>
-
 <style>
     body {
         background-color: #f5f5f5;
@@ -61,11 +64,19 @@
     button:hover {
         background-color: #555;
     }
+
+    #count {
+        text-align: center;
+        font-size: 30px;
+        color: #333;
+        margin-top: 20px;
+    }
 </style>
 
 <body>
     <img src="dog.png" alt="Virtual dog" id="dog" height="300px" width="300px">
     <button onclick="pet()">Pet the dog</button>
+    <p>You have petted the dog <span id="count">0</span> times</p>
 </body>
 
 </html>
